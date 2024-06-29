@@ -1,4 +1,4 @@
-module my-gofiber-mvc
+module gofiber-mvc
 
 go 1.22.2
 

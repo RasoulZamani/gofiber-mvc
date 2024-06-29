@@ -1,8 +1,8 @@
 package db
 
 import (
+	"gofiber-mvc/models"
 	"log"
-	"my-gofiber-mvc/models"
 
 	"gorm.io/gorm"
 )

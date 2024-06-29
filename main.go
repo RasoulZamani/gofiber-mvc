@@ -5,7 +5,7 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 
-	"my-gofiber-mvc/db"
+	"gofiber-mvc/db"
 )
 
 func main() {
