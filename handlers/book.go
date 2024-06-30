@@ -44,14 +44,6 @@ func GetBook(c *fiber.Ctx) error {
 func CreateBook(c *fiber.Ctx) error {
 	book := new(models.Book)
 
-	if err := c.BodyParser(book); err != nil {
-		log.Printf("Error parsing request body: %v", err)
-		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
-			"error":   "Invalid request body",
-			"details": err.Error(),
-		})
-	}
-
 	if err := Database.Create(book).Error; err != nil {
 		log.Printf("Error creating book record: %v", err)
 		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
