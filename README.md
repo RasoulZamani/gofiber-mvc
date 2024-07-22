@@ -1,6 +1,6 @@
 # Sample API with GoFiber, Gorm and PSQL in MVC Architecture
 
-In progress ...
+I just want to test simple CRUD in goFiber framework.
 
 # Usage:
 
